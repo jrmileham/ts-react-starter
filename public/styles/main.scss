@@ -1,0 +1,9 @@
+@import 'lib/reset';
+@import 'lib/fonts';
+
+/* Added Fonts */
+* {
+  font-family: $amazingFontList;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

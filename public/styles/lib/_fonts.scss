@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Open+Sans');
+$open-sans: 'Open Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$amazingFontList: Roboto, -apple-system, BlinkMacSystemFont, "Oxygen", "Helvetica Neue", "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Open Sans", sans-serif;
+
+:export {
+  amazingFontList: $amazingFontList;
+  roboto: $roboto;
+  openSans: $open-sans;
+}

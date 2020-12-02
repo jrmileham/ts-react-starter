@@ -1,2 +1,2 @@
-# ts-react-starter
+# TS React Starter
 ReactJS Starter (Typescript)
