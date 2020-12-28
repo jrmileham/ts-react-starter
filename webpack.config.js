@@ -1,4 +1,5 @@
 require('dotenv').config();
+const fs = require('fs');
 const webpack = require('webpack');
 const Dotenv  = require('dotenv-webpack');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
@@ -80,6 +81,7 @@ if(/^dev+/i.test(ENV)){
     proxy: {}
   };
 } else {
+  if(fs.existsSync(`${APP_ROOT}/build`)) fs.rmSync(`${APP_ROOT}/build`, {recursive: true});
   config.plugins.push(
     new CopyPlugin({
       patterns: [
