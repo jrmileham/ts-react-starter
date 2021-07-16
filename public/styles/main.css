@@ -1,0 +1,108 @@
+/*!*********************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!../public/styles/main.scss ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Roboto|Open+Sans);
+/*!*************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!../public/styles/main.scss (1) ***!
+  \*************************************************************************************************************************/
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+:export {
+  amazingFontList: Roboto, -apple-system, BlinkMacSystemFont, "Oxygen", "Helvetica Neue", "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Open Sans", sans-serif;
+  roboto: "Roboto", sans-serif;
+  openSans: "Open Sans", sans-serif; }
+
+/* Added Fonts */
+* {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Oxygen", "Helvetica Neue", "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wdWJsaWMvc3R5bGVzL2xpYi9fcmVzZXQuc2NzcyIsIndlYnBhY2s6Ly8vLi9wdWJsaWMvc3R5bGVzL21haW4uc2NzcyIsIndlYnBhY2s6Ly8vLi9wdWJsaWMvc3R5bGVzL2xpYi9fZm9udHMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7O0FBQUE7Ozs7OztDQ01DO0FERUQ7Ozs7Ozs7Ozs7OztFQVlJLFNBQVE7RUFDUixVQUFTO0VBQ1QsU0FBUTtFQUNSLFVBQVM7RUFDVCxXQUFjO0VBQ2QsVUFBdUI7RUFDdkIsV0FBc0I7O0FBRzFCO0VBQ0ksY0FBYTs7QUFHakI7O0FBRWU7O0FBR2Y7RUFDSSxnQkFBZTs7QUFHbkI7RUFDSSxZQUFXOztBQUdmOztBQUVjO0VBQ1YsYUFBWTs7QUFHaEI7RUFDSSxTQUFRO0FBQ0M7RUFDVCxDQUFjO0VBQ2QsVUFBdUI7RUFDdkIsV0FBc0I7O0FBRzFCO0FBQ0E7QUFDeUI7RUFDckIsV0FBVTtFQUNWLEdBQW9COztBQUd4QjtBQUNBO0FBQ3lCO0VBQ3JCLFdBQVU7RUFDVixJQUFpQjtFQUNqQixpQkFBZ0I7O0FBR3BCO0VBQ0ksb0JBQTZCOztBQUdqQztFQUNJLHlCQUF3QjtBQUNiOztBQUdmO0VBQ0ksZUFBd0I7QUFDUjs7QUFHcEI7QUFDQTtBQUNpQjtFQUNiLFdBQVU7RUFDVixFQUFRO0VBQ1IsZUFBNEI7RUFDNUIsWUFBWTtFQUNaLFVBQVM7O0FBR2I7RUFDSSxhQUFxQjs7QUUvRnpCO0VBQ0UseUJBSHVNO0FBRDVLO0VBTTNCLE9BUGlDOztBREVuQztBQUNBO0FDRHlNO0VER3ZNLGVBQW1DO0VBQ25DLENBQWtDIiwiZmlsZSI6InN0eWxlcy9tYWluLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIFxuaHRtbDVkb2N0b3IuY29tIFJlc2V0IFN0eWxlc2hlZXRcbnYxLjYuMVxuTGFzdCBVcGRhdGVkOiAyMDEwLTA5LTE3XG5BdXRob3I6IFJpY2hhcmQgQ2xhcmsgLSBodHRwOi8vcmljaGNsYXJrZGVzaWduLmNvbSBcblR3aXR0ZXI6IEByaWNoX2NsYXJrXG4qL1xuXG5odG1sLCBib2R5LCBkaXYsIHNwYW4sIG9iamVjdCwgaWZyYW1lLFxuaDEsIGgyLCBoMywgaDQsIGg1LCBoNiwgcCwgYmxvY2txdW90ZSwgcHJlLFxuYWJiciwgYWRkcmVzcywgY2l0ZSwgY29kZSxcbmRlbCwgZGZuLCBlbSwgaW1nLCBpbnMsIGtiZCwgcSwgc2FtcCxcbnNtYWxsLCBzdHJvbmcsIHN1Yiwgc3VwLCB2YXIsXG5iLCBpLFxuZGwsIGR0LCBkZCwgb2wsIHVsLCBsaSxcbmZpZWxkc2V0LCBmb3JtLCBsYWJlbCwgbGVnZW5kLFxudGFibGUsIGNhcHRpb24sIHRib2R5LCB0Zm9vdCwgdGhlYWQsIHRyLCB0aCwgdGQsXG5hcnRpY2xlLCBhc2lkZSwgY2FudmFzLCBkZXRhaWxzLCBmaWdjYXB0aW9uLCBmaWd1cmUsIFxuZm9vdGVyLCBoZWFkZXIsIGhncm91cCwgbWVudSwgbmF2LCBzZWN0aW9uLCBzdW1tYXJ5LFxudGltZSwgbWFyaywgYXVkaW8sIHZpZGVvIHtcbiAgICBtYXJnaW46MDtcbiAgICBwYWRkaW5nOjA7XG4gICAgYm9yZGVyOjA7XG4gICAgb3V0bGluZTowO1xuICAgIGZvbnQtc2l6ZToxMDAlO1xuICAgIHZlcnRpY2FsLWFsaWduOmJhc2VsaW5lO1xuICAgIGJhY2tncm91bmQ6dHJhbnNwYXJlbnQ7XG59XG5cbmJvZHkge1xuICAgIGxpbmUtaGVpZ2h0OjE7XG59XG5cbmFydGljbGUsYXNpZGUsZGV0YWlscyxmaWdjYXB0aW9uLGZpZ3VyZSxcbmZvb3RlcixoZWFkZXIsaGdyb3VwLG1lbnUsbmF2LHNlY3Rpb24geyBcbiAgZGlzcGxheTpibG9jaztcbn1cblxubmF2IHVsIHtcbiAgICBsaXN0LXN0eWxlOm5vbmU7XG59XG5cbmJsb2NrcXVvdGUsIHEge1xuICAgIHF1b3Rlczpub25lO1xufVxuXG5ibG9ja3F1b3RlOmJlZm9yZSwgYmxvY2txdW90ZTphZnRlcixcbnE6YmVmb3JlLCBxOmFmdGVyIHtcbiAgICBjb250ZW50OicnO1xuICAgIGNvbnRlbnQ6bm9uZTtcbn1cblxuYSB7XG4gICAgbWFyZ2luOjA7XG4gICAgcGFkZGluZzowO1xuICAgIGZvbnQtc2l6ZToxMDAlO1xuICAgIHZlcnRpY2FsLWFsaWduOmJhc2VsaW5lO1xuICAgIGJhY2tncm91bmQ6dHJhbnNwYXJlbnQ7XG59XG5cbi8qIGNoYW5nZSBjb2xvdXJzIHRvIHN1aXQgeW91ciBuZWVkcyAqL1xuaW5zIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiNmZjk7XG4gICAgY29sb3I6IzAwMDtcbiAgICB0ZXh0LWRlY29yYXRpb246bm9uZTtcbn1cblxuLyogY2hhbmdlIGNvbG91cnMgdG8gc3VpdCB5b3VyIG5lZWRzICovXG5tYXJrIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiNmZjk7XG4gICAgY29sb3I6IzAwMDsgXG4gICAgZm9udC1zdHlsZTppdGFsaWM7XG4gICAgZm9udC13ZWlnaHQ6Ym9sZDtcbn1cblxuZGVsIHtcbiAgICB0ZXh0LWRlY29yYXRpb246IGxpbmUtdGhyb3VnaDtcbn1cblxuYWJiclt0aXRsZV0sIGRmblt0aXRsZV0ge1xuICAgIGJvcmRlci1ib3R0b206MXB4IGRvdHRlZDtcbiAgICBjdXJzb3I6aGVscDtcbn1cblxudGFibGUge1xuICAgIGJvcmRlci1jb2xsYXBzZTpjb2xsYXBzZTtcbiAgICBib3JkZXItc3BhY2luZzowO1xufVxuXG4vKiBjaGFuZ2UgYm9yZGVyIGNvbG91ciB0byBzdWl0IHlvdXIgbmVlZHMgKi9cbmhyIHtcbiAgICBkaXNwbGF5OmJsb2NrO1xuICAgIGhlaWdodDoxcHg7XG4gICAgYm9yZGVyOjA7ICAgXG4gICAgYm9yZGVyLXRvcDoxcHggc29saWQgI2NjY2NjYztcbiAgICBtYXJnaW46MWVtIDA7XG4gICAgcGFkZGluZzowO1xufVxuXG5pbnB1dCwgc2VsZWN0IHtcbiAgICB2ZXJ0aWNhbC1hbGlnbjptaWRkbGU7XG59IiwiQGltcG9ydCAnbGliL3Jlc2V0JztcbkBpbXBvcnQgJ2xpYi9mb250cyc7XG5cbi8qIEFkZGVkIEZvbnRzICovXG4qIHtcbiAgZm9udC1mYW1pbHk6ICRhbWF6aW5nRm9udExpc3Q7XG4gIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xuICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlO1xufSIsIkBpbXBvcnQgdXJsKCdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9Um9ib3RvfE9wZW4rU2FucycpO1xuJG9wZW4tc2FuczogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XG4kcm9ib3RvOiAnUm9ib3RvJywgc2Fucy1zZXJpZjtcbiRhbWF6aW5nRm9udExpc3Q6IFJvYm90bywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCBcIk94eWdlblwiLCBcIkhlbHZldGljYSBOZXVlXCIsIFwiU2Vnb2UgVUlcIiwgQXJpYWwsIHNhbnMtc2VyaWYsIFwiQXBwbGUgQ29sb3IgRW1vamlcIiwgXCJTZWdvZSBVSSBFbW9qaVwiLCBcIlNlZ29lIFVJIFN5bWJvbFwiLCBcIk9wZW4gU2Fuc1wiLCBzYW5zLXNlcmlmO1xuXG46ZXhwb3J0IHtcbiAgYW1hemluZ0ZvbnRMaXN0OiAkYW1hemluZ0ZvbnRMaXN0O1xuICByb2JvdG86ICRyb2JvdG87XG4gIG9wZW5TYW5zOiAkb3Blbi1zYW5zO1xufSJdLCJzb3VyY2VSb290IjoiIn0=*/
