@@ -118,9 +118,7 @@ if(/^dev+/i.test(ENV)){
     compress: true,
     port: PORT,
     host: HOST,
-    hot: true,
-    
-    proxy: {}
+    hot: true
   };
 } else {
   if(fs.existsSync(`${APP_ROOT}/build`)) fs.rmSync(`${APP_ROOT}/build`, {recursive: true});
