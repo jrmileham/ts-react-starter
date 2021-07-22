@@ -1,6 +1,7 @@
 import ShowDate from '@App/components/ShowDate';
 import { PropsWithChildren } from 'react';
 import './ExpenseItem.scss';
+import './ExpenseDate.scss';
 
 
 export type ExpenseItemProps = {
@@ -13,7 +14,7 @@ function ExpenseItem(props: PropsWithChildren<ExpenseItemProps>): JSX.Element {
   const { expenseDate, expenseTitle, expenseAmount } = props;
   return (
     <div className="expense-item">
-      <ShowDate date={expenseDate} />
+      <ShowDate className="expense-date" date={expenseDate} />
       <div className="expense-item__description">
         <h2>{expenseTitle}</h2>
         <div className="expense-item__price">£{expenseAmount}</div>
