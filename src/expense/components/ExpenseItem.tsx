@@ -1,5 +1,5 @@
 import ShowDate from '@App/components/ShowDate';
-import { PropsWithChildren } from 'react';
+import { PropsWithChildren, SyntheticEvent, useState } from 'react';
 import './ExpenseItem.scss';
 import './ExpenseDate.scss';
 import Card from '@App/components/Card';
@@ -12,13 +12,18 @@ export type ExpenseItemProps = {
 }
 
 function ExpenseItem(props: PropsWithChildren<ExpenseItemProps>): JSX.Element {
+  const [ title, updateTitle ] = useState<string>(props.expenseTitle);
+  
+  function changeTitle () { updateTitle("hello " + props.expenseTitle) };
+
   const { expenseDate, expenseTitle, expenseAmount } = props;
   return (
     <Card className="expense-item">
       <ShowDate className="expense-date" date={expenseDate} />
       <div className="expense-item__description">
-        <h2>{expenseTitle}</h2>
+        <h2>{title}</h2>
         <div className="expense-item__price">£{expenseAmount}</div>
+        <button onClick={changeTitle}>change title</button>
       </div>
     </Card>
   );
