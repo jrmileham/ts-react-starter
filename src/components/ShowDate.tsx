@@ -18,8 +18,9 @@ function ShowDate(props: PropsWithChildren<ShowDateProps>): JSX.Element {
     <div {...divProps}>
       <div className={divProps.className ? `${divProps.className}__month` : undefined}>{localedDate.format("MMMM")}</div>
       <div className={divProps.className ? `${divProps.className}__year` : undefined}>{localedDate.format("YYYY")}</div>
-      <div className={divProps.className ? `${divProps.className}__day` : undefined}>{localedDate.format("Mo")}</div>
-    </div>);
+      <div className={divProps.className ? `${divProps.className}__day` : undefined}>{localedDate.format("Do")}</div>
+    </div>
+  );
 }
 
 ShowDate.defaultProps = defaultProps;
