@@ -34,7 +34,8 @@ function App(): JSX.Element {
   );
 
   const addExpense = (newExpense: Expense): void => {
-    setExpenses([...expenses, newExpense]);
+    setExpenses((prevState: Expense[]): Expense[] => 
+      [...prevState, newExpense]);
   };
   return (
     <div className="App">

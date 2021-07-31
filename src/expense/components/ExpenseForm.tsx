@@ -18,9 +18,15 @@ function ExpenseForm(props: PropsWithChildren<ExpenseFormProps>): JSX.Element {
 
   const [expense, setExpense] = useState<Expense>(defaultState);
 
-  const titleChangeHandler = (event: ChangeEvent<HTMLInputElement>): void => setExpense({...expense, title: event.target.value});
-  const amountChangeHandler = (event: ChangeEvent<HTMLInputElement>): void => setExpense({...expense, amount: event.target.valueAsNumber});
-  const dateChangeHandler = (event: ChangeEvent<HTMLInputElement>): void => setExpense({...expense, date: event.target.valueAsDate!});
+  const titleChangeHandler = (event: ChangeEvent<HTMLInputElement>): void => {
+    setExpense((prevState: Expense): Expense => ({...prevState, title: event.target.value}));
+  }
+  const amountChangeHandler = (event: ChangeEvent<HTMLInputElement>): void => {
+    setExpense((prevState: Expense): Expense => ({...prevState, amount: event.target.valueAsNumber}));
+  }
+  const dateChangeHandler = (event: ChangeEvent<HTMLInputElement>): void => {
+    setExpense((prevState: Expense): Expense => ({...prevState, date: event.target.valueAsDate!}));
+  }
   const submitFormHandler = (event: FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
     props.submitExpense(expense);

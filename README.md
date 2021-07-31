@@ -4,9 +4,9 @@ ReactJS Starter (Typescript)
 ## TODO
 - [x] Base Setup
 - [x] Jest for Testing
-- [ ] UI Testing
+- [x] UI Testing
 - [ ] `.env` generator
-- [ ] Build dir cleaning
+- [x] Build dir cleaning
 - [ ] Service Worker
 - [ ] Web Worker
 - [ ] StoryBook? 
