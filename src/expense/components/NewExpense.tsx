@@ -1,8 +1,8 @@
+import { PropsWithChildren } from "react";
+import ExpenseForm from "@App/expense/components/ExpenseForm";
+import Expense from "@App/expense/model/Expense";
 import "./NewExpense.scss";
 
-import ExpenseForm from "@App/expense/components/ExpenseForm";
-import { PropsWithChildren } from "react";
-import Expense from "@App/expense/model/Expense";
 
 export type NewExpenseProps = {
   addExpense: (newExpense: Expense) => void;

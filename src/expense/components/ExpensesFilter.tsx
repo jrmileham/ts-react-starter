@@ -1,5 +1,4 @@
 import { ChangeEvent } from "react";
-
 import './ExpensesFilter.scss';
 
 export type ExpensesFilterProps = {

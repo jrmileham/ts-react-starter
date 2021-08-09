@@ -1,8 +1,7 @@
-import moment from "moment";
 import { ChangeEvent, FormEvent, PropsWithChildren, useState } from "react";
-import "./NewExpense.scss";
-
+import moment from "moment";
 import Expense from "@App/expense/model/Expense";
+import "./NewExpense.scss";
 
 export type ExpenseFormProps = {
   submitExpense: (newExpense: Expense) => void;

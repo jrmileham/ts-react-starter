@@ -1,8 +1,8 @@
+import { useState } from 'react';
 import pkg from '@package';
 import Expenses from '@App/expense/components/Expenses';
 import NewExpense from '@App/expense/components/NewExpense';
 import Expense from '@App/expense/model/Expense';
-import { useState } from 'react';
 
 /**
  * Main function
