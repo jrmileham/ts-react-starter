@@ -3,6 +3,7 @@ import Card from '@App/components/Card';
 import ExpensesFilter from '@App/expense/components/ExpensesFilter';
 import ExpensesList from '@App/expense/components/ExpensesList';
 import Expense from '@App/expense/model/Expense';
+import ExpensesChart from './ExpensesChart';
 import './Expenses.scss';
 
 export type ExpensesProps = {
@@ -19,6 +20,7 @@ function Expenses(props: PropsWithChildren<ExpensesProps>): JSX.Element {
   return (
     <Card className="expenses">
       <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
+      <ExpensesChart expenses={filteredExpenses} />
       <ExpensesList expenses={filteredExpenses} />
     </Card>
   );
