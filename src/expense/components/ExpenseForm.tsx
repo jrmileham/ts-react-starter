@@ -5,6 +5,7 @@ import "./NewExpense.scss";
 
 export type ExpenseFormProps = {
   submitExpense: (newExpense: Expense) => void;
+  cancelExpense: () => void;
 };
 
 const defaultState: Expense = {
@@ -49,6 +50,9 @@ function ExpenseForm(props: PropsWithChildren<ExpenseFormProps>): JSX.Element {
         </div>
         <div className="new-expense__actions">
           <button type="submit">Add Expense</button>
+        </div>
+        <div className="new-expense__actions">
+          <button type="button" onClick={props.cancelExpense}>Cancel</button>
         </div>
       </div>
     </form>
