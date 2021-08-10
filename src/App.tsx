@@ -1,46 +1,57 @@
 import { useState } from 'react';
 import pkg from '@package';
-import Expenses from '@App/expense/components/Expenses';
-import NewExpense from '@App/expense/components/NewExpense';
-import Expense from '@App/expense/model/Expense';
+
+import CourseGoalList from '@App/components/CourseGoals/CourseGoalList/CourseGoalList';
+import CourseInput from '@App/components/CourseGoals/CourseInput/CourseInput';
+import Goal from '@App/model/Goal';
+import './App.scss';
 
 /**
  * Main function
  */
 function App(): JSX.Element {
-  const [expenses, setExpenses] = useState<Expense[]>(
-    [
-      {
-        date: new Date(2021, 6, 20),
-        title: "Tech",
-        amount: 353.52
-      },
-      {
-        date: new Date(2021, 2, 14),
-        title: "Vacaciones",
-        amount: 1003
-      },
-      {
-        date: new Date(2021, 3, 30),
-        title: "Phone",
-        amount: 30.01
-      },
-      {
-        date: new Date(2021, 5, 5),
-        title: "Viajo",
-        amount: 500.25
-      }
-    ]
-  );
 
-  const addExpense = (newExpense: Expense): void => {
-    setExpenses((prevState: Expense[]): Expense[] => 
-      [...prevState, newExpense]);
+  const [courseGoals, setCourseGoals] = useState<Goal[]>([
+    { text: 'Do all exercises!', id: 'g1' },
+    { text: 'Finish the course!', id: 'g2' }
+  ]);
+
+  const addGoalHandler = (enteredText: string): void => {
+    setCourseGoals((prevGoals: Goal[]): Goal[] => {
+      const updatedGoals: Goal[] = [...prevGoals];
+      updatedGoals.unshift({ text: enteredText, id: Math.random().toString() });
+      return updatedGoals;
+    });
   };
+
+  const deleteItemHandler = (goalId: string): void => {
+    setCourseGoals( (prevGoals: Goal[]): Goal[] => {
+      const updatedGoals: Goal[] = prevGoals.filter(goal => goal.id !== goalId);
+      return updatedGoals;
+    });
+  };
+
+  let content: JSX.Element = <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>;
+
+  if (courseGoals.length > 0) {
+    content = <CourseGoalList items={courseGoals} onDeleteItem={deleteItemHandler} />;
+  }
+
   return (
-    <div className="App">
-      <NewExpense addExpense={addExpense}/>
-      <Expenses expenses={expenses} />
+    <div>
+      <section id="goal-form">
+        <CourseInput onAddGoal={addGoalHandler} />
+      </section>
+      <section id="goals">
+        {content}
+        {/* {courseGoals.length > 0 && (
+          <CourseGoalList
+            items={courseGoals}
+            onDeleteItem={deleteItemHandler}
+          />
+        ) // <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
+        } */}
+      </section>
     </div>
   );
 }
