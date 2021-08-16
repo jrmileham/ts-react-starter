@@ -27,14 +27,11 @@ function CourseInput (props): JSX.Element {
     setEnteredValue(defaultState);
   };
 
-  const isValidColor: string = !isValid? 'firebrick' : 'black';
-
   return (
     <form onSubmit={formSubmitHandler}>
-      <div className="form-control">
-        <label style={{color: isValidColor}}>Course Goal</label>
-        <input 
-          style={{borderColor: isValidColor, background: !isValid? 'lightpink' : 'transparent'}} 
+      <div className={`form-control ${!isValid? "invalid" : ""}`}>
+        <label>Course Goal</label>
+        <input
           type="text" onChange={goalInputChangeHandler} 
           value={enteredValue}
         />
