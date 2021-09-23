@@ -114,7 +114,9 @@ const config = {
  // Add any extra dev or non components
 if(/^dev+/i.test(ENV)){
   config.devServer = {
-    contentBase: outputPath,
+    static: {
+      directory: outputPath,
+    },
     compress: true,
     port: PORT,
     host: HOST,
